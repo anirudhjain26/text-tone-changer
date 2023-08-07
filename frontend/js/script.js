@@ -59,6 +59,7 @@ function sendMessageToBackground(message) {
   
   // Event listener for the 'Reset' button
   document.getElementById("reset-button").addEventListener("click", function () {
+    // toneButtons.forEach((button) => button.classList.remove("active"));
     // Clear the text input and update the selected text from the active tab
     document.getElementById("text-input").value = "";
     updateSelectedText();
@@ -72,6 +73,25 @@ function sendMessageToBackground(message) {
       alert("Rephrased text saved to clipboard!");
     });
   });
+
+  // Event listener for the 'Save' button
+/*   document.getElementById("save-button").addEventListener("click", function () {
+    // Make an HTTP request to your Flask backend to get the rephrased text
+    fetch("http://127.0.0.1:5000/") // Replace with your actual backend URL
+      .then(response => response.json())
+      .then(data => {
+        const rephrasedText = data.rephrasedText;
+
+        // Save the rephrased text to the clipboard
+        navigator.clipboard.writeText(rephrasedText).then(() => {
+          alert("Rephrased text saved to clipboard!");
+        });
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+  }); */
+
   
   // Event listener for when the popup is loaded
   document.addEventListener("DOMContentLoaded", function () {
