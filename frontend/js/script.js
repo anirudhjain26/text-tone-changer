@@ -42,20 +42,46 @@ function sendMessageToBackground(message) {
     }
   }
   
-  // Event listener for the 'Formal' tone button
+  // Event listener for the 'formal' tone button
   document.getElementById("tone-formal").addEventListener("click", function () {
     selectTone("formal");
   });
   
-  // Event listener for the 'Casual' tone button
+  // Event listener for the 'casual' tone button
   document.getElementById("tone-casual").addEventListener("click", function () {
     selectTone("casual");
   });
-  
-  // Event listener for the 'Friendly' tone button
-  document.getElementById("tone-friendly").addEventListener("click", function () {
-    selectTone("friendly");
+
+  // Event listener for the 'excited' tone button
+  document.getElementById("tone-excited").addEventListener("click", function () {
+    selectTone("excited");
   });
+  
+  // Event listener for the 'humorous' tone button
+  document.getElementById("tone-humorous").addEventListener("click", function () {
+    selectTone("humorous");
+  });
+
+  // Event listener for the 'persuasive' tone button
+  document.getElementById("tone-persuasive").addEventListener("click", function () {
+    selectTone("persuasive");
+  });
+  
+  // Event listener for the 'assertive' tone button
+  document.getElementById("tone-assertive").addEventListener("click", function () {
+    selectTone("assertive");
+  });
+
+  // Event listener for the 'empathetic' tone button
+  document.getElementById("tone-empathetic").addEventListener("click", function () {
+    selectTone("empathetic");
+  });
+  
+  // Event listener for the 'sarcastic' tone button
+  document.getElementById("tone-sarcastic").addEventListener("click", function () {
+    selectTone("sarcastic");
+  });
+  
   
   // Event listener for the 'Reset' button
   document.getElementById("reset-button").addEventListener("click", function () {

@@ -9,6 +9,8 @@ body {
   .popup-container {
     width: 300px;
     padding: 20px;
+    margin: 0 auto; /* Center align the container */
+    text-align: center; /* Center align text content */
   }
   
   /* Text input */
@@ -24,7 +26,8 @@ body {
   /* Tone buttons container */
   .tone-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; /* Center align buttons horizontally */
   }
   
   /* Tone button */
@@ -49,8 +52,33 @@ body {
     color: #fff;
   }
   
-  .tone-button.friendly {
+  .tone-button.excited {
     background-color: #ffc107;
+    color: #000;
+  }
+
+  .tone-button.humorous {
+    background-color: #e4ea25;
+    color: #000;
+  }
+  
+  .tone-button.persuasive {
+    background-color: #a60101;
+    color: #fff;
+  }
+  
+  .tone-button.assertive {
+    background-color: #4e0799;
+    color: #fff;
+  }
+
+  .tone-button.empathetic {
+    background-color: #6d5106;
+    color: #fff;
+  }
+  
+  .tone-button.sarcastic {
+    background-color: #77e8f2;
     color: #000;
   }
   
@@ -59,3 +87,24 @@ body {
     opacity: 0.7;
   }
   
+  /* New styles for two rows of tone buttons */
+/* New styles for two rows of tone buttons */
+.tone-row {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-bottom: 10px; /* Add spacing between rows */
+}
+
+/* Center align the save and reset buttons */
+#reset-button,
+#save-button {
+  display: inline-block;
+  margin: 4px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+/* Center align the text input field */
+#text-input {
+  text-align: center;
+}

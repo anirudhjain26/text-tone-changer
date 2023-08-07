@@ -7,16 +7,21 @@ function sendMessageToBackend(message, callback) {
     headers: {
       "Content-Type": "application/json",
     },
+    mode: "no-cors",
     body: JSON.stringify(message),
   })
     .then((response) => response.json())
     .then((data) => {
+      navigator.clipboard.writeText(data.rephrasedText);
+      alert('Rephrased text has been saved to the clipboard.');
       callback(data); // Changed from sendResponse(data);
     })
-    .catch((error) => {
-      console.error("Error sending message to backend:", error);
-      callback(null); // Changed from callback(null);
-    });
+    // .catch((error) => {
+    //   console.error("Error sending message to backend:", error);
+    //   callback(null); // Changed from callback(null);
+    // });
+    .catch(error => console.log('Error:', error));
+    return true;
 }
 
 // Function to handle messages from the frontend (popup)
