@@ -12,14 +12,23 @@
 <body>
   <div class="popup-container">
     <h1>Text Tone Changer</h1>
-    <textarea id="text-input" class="text-input" placeholder="Select text on a webpage"></textarea>
+    <textarea id="text-input" class="text-input" placeholder="Write the text you want to rephrase"></textarea>
     <div class="tone-buttons">
-      <button id="tone-formal" class="tone-button formal">Formal</button>
-      <button id="tone-casual" class="tone-button casual">Casual</button>
-      <button id="tone-friendly" class="tone-button friendly">Friendly</button>
+      <div class="tone-row">
+        <button id="tone-formal" class="tone-button formal">Formal</button>
+        <button id="tone-casual" class="tone-button casual">Casual</button>
+        <button id="tone-excited" class="tone-button excited">Excited</button>
+        <button id="tone-humorous" class="tone-button humorous">Humorous</button>
+      </div>
+      <div class="tone-row">
+        <button id="tone-persuasive" class="tone-button persuasive">Persuasive</button>
+        <button id="tone-assertive" class="tone-button assertive">Assertive</button>
+        <button id="tone-empathetic" class="tone-button empathetic">Empathetic</button>
+        <button id="tone-sarcastic" class="tone-button sarcastic">Sarcastic</button>
+      </div>
     </div>
-    <button id="reset-button">Reset</button>
-    <button id="save-button">Save to Clipboard</button>
+    <button id="reset-button">Clear Text</button>
+    <button id="save-button">Rephrase</button>
   </div>
 </body>
 
