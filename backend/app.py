@@ -20,6 +20,7 @@ def rephrase_text(selected_text, tone):
 
 @app.route("/", methods=["POST"])
 def change_tone():
+    # adding comments
     print("REQUEST RECEIVED")
     data = request.get_json()
     if not data or "selectedText" not in data or "tone" not in data:
