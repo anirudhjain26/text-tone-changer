@@ -1,0 +1,14 @@
+# Python files
+*.pyc
+__pycache__/
+
+# Flask environment
+instance/
+.env
+venv/
+
+# VS Code settings
+.vscode/
+
+# Node modules (if applicable)
+node_modules/

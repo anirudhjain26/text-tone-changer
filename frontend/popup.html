@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text Tone Changer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+
+<body>
+  <div class="popup-container">
+    <h1>Text Tone Changer</h1>
+    <textarea id="text-input" class="text-input" placeholder="Write the text you want to rephrase"></textarea>
+    <div class="tone-buttons">
+      <div class="tone-row">
+        <button id="tone-formal" class="tone-button formal">Formal</button>
+        <button id="tone-casual" class="tone-button casual">Casual</button>
+        <button id="tone-excited" class="tone-button excited">Excited</button>
+      </div>
+      <div class="tone-row">
+        <button id="tone-persuasive" class="tone-button persuasive">Persuasive</button>
+        <button id="tone-assertive" class="tone-button assertive">Assertive</button>
+        <button id="tone-empathetic" class="tone-button empathetic">Empathetic</button>
+      </div>
+    <div class="tone-row">
+      <button id="tone-sarcastic" class="tone-button sarcastic">Sarcastic</button>
+      <button id="tone-humorous" class="tone-button humorous">Humorous</button>
+      <!-- <button id="tone-custom" class="tone-button custom">Custom</button> -->
+    </div>
+    </div>
+    <button id="rephrase-button">Rephrase</button>
+    <p id="result"></p>
+    <!-- History Section Start -->
+    <div id="history-section" class="history-section">
+      <div class="history-header">
+        <h2>History</h2>
+        <button id="clear-history-button" class="clear-history-button">Clear History</button>
+      </div>
+      <div id="history-list" class="history-list">
+        <!-- History items will be dynamically inserted here -->
+      </div>
+    </div>
+    <!-- History Section End -->
+  </div>
+</body>
+
+</html>
