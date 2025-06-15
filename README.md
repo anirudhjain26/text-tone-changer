@@ -47,7 +47,3 @@ This project is for educational and experimental purposes. The accuracy and perf
 
 - This project was inspired by the need for a convenient way to rephrase text with different tones in online communication.
 - We thank OpenAI for providing access to the powerful GPT3.5 model, enabling the implementation of this extension.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
