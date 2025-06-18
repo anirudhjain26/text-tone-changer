@@ -42,8 +42,3 @@ The primary objective of this project is to build a Chrome extension that enable
 ## Disclaimer
 
 This project is for educational and experimental purposes. The accuracy and performance of the tone analysis and text rewriting heavily depend on the GPT3.5 model and its usage. OpenAI's API may have usage limitations and costs associated with it.
-
-## Acknowledgments
-
-- This project was inspired by the need for a convenient way to rephrase text with different tones in online communication.
-- We thank OpenAI for providing access to the powerful GPT3.5 model, enabling the implementation of this extension.
